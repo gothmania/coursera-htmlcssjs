@@ -3,14 +3,85 @@
     <head>
         <meta charset="utf-8">
         <title>Example 1</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
     </head>
 
     <body>
-        <div>Body of the Example 1.</div>
+        <header>
+            <div>This is a header element.</div>
+            <nav>
+                <span>Home</span>
+                <span>Github</span>
+                <span>Contact</span>
+            </nav>
+    </header>
+
+        <h1>Phrasing vs. flow element</h1>
         <div>
             In this paragraph,
-            <span>this is in a span element (phrasing / inline content).</span>
-            And this is outside but in a div element (flow / block-level content).
+            <span>this is in a <code>span</code> element (phrasing / inline content).</span>
+            And this is outside but in a <code>div</code> element (flow / block-level content).
         </div>
+        <div>Go to the section about <a href="#section-lists">Lists</a>.</div>
+
+        <h1>Semantic element</h1>
+        <div><code>h1</code> is a semantic element.</coide></div>
+        <div>See more at <a href="https://www.w3schools.com/html/html5_semantic_elements.asp" target="_blank">W3Schools</a></div>
+        <img src="https://miro.medium.com/max/960/0*xLRsbQ02J7sQpNNy" width="400">
+
+        <h1 id="section-lists">Lists</h1>
+        <div>This is an unordered list (<code>ul</code> tag) of character escapes in HTML.
+        List items are bounded the <code>li</code> tag.</div>
+        <div>
+            <ul>
+                <li>&lt;</li>
+                <li>&gt;</li>
+                <li>&amp;</li>
+                <li>&copy;</li>
+            </ul>
+        </div>
+
+        <div>This is an ordered list (<code>ol</code> tag).</div>
+        <div>
+            <ol>
+                <li>Young people</li>
+                <li>Middle-age people</li>
+                <li>Elder people</li>
+            </ol>
+        </div>
+
+        <div class="div-arial">As you can see, our heading didn't really do so well. It says, Don't be afraid to be more and there's a whole bunch of words missing here. Well the reason this is going on is because the browser is interpreting this left angle bracket as a beginning of a tag. And then it looks at the word then. It doesn't quite understand what kind of a tag that is and basically skips just about everything between the left angle bracket and the right angle bracket and just says the word more. So we could fix that very easily with substituting the &lt; angle bracket with the HTML&nbsp;entity&nbsp;reference.</div>
+
+        <h1>CSS</h1>
+        <div>Anatomy of a CSS rule:
+            <ul>
+                <li>Selector</li>
+                <li>Property</li>
+                <li>Value</li>
+            </ul>
+        </div>
+        <div>Syntax:<br>
+            <code>
+                &lt;selector&gt; {<br>
+                    &emsp;&lt;property&gt;: &lt;value&gt;;<br>
+                }<br>
+            </code>
+        </div>
+        <div>Combining selectors:
+            <ul>
+                <li>Element with class selector: <code>&lt;selector&gt;.&lt;class&gt;</code></li>
+                <li>Child selector: <code>&lt;selector&gt; &gt; &lt;selector&gt;</code></li>
+                <li>Descendent selector: <code>&lt;selector&gt; &lt;selector&gt;</code></li>
+            </ul>
+        </div>
+        <div>Pseudo-class selector: <code>:</code></div>
+
+        <footer>
+            This is a footer element.
+        </footer>
     </body>
 </html>

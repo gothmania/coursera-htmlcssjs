@@ -1,0 +1,71 @@
+/* Element selector */
+body {
+    font-family: 'Lexend Light', sans-serif;
+    margin: 0pt;
+}
+
+h1 {
+    font-family: 'Lexend SemiBold';
+    font-size: 16pt;
+}
+
+code {
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+header, footer {
+    display: block;
+    background-color: #007c7c;
+    color: #ececf0;
+    font-size: 10pt;
+    padding: 5pt;
+}
+
+header {
+    margin-bottom: 10pt;
+}
+
+footer {
+    margin-top: 10pt;
+}
+
+nav span {
+    background-color: #ececf0;
+    color: black;
+    display: inline-block;
+    width: 100px;
+    text-decoration: none;
+    text-align: center;
+    margin: 5pt;
+    padding: 5pt;
+    border-radius: 5px;
+}
+
+nav span:hover {
+    background-color: #f7e7a8;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+a {
+    background-color: #ececf0;
+    color: #007c7c;
+    padding-left: 2pt;
+    padding-right: 2pt;
+}
+
+a:hover, a:active {
+    background-color: #f7e7a8;
+    color: #ca0035;
+}
+
+/* Class selector */
+.div-arial {
+    font-family: Arial;
+    font-size: 10pt;
+}
+
+/* ID selector */
+#section-lists {
+    font-style: italic;
+}
