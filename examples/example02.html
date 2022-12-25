@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Example 2</title>
+        <meta charset="utf-8">
+        <style type="text/css">
+            * {
+                box-sizing: border-box;
+            }
+
+            #box {
+                background-color: blueviolet;
+                border: 5px solid lightgray;
+                margin: 40px;
+                padding: 10px;
+                width: 400px;
+                height: 100px;
+                overflow: auto;
+            }
+
+            #content {
+                background-color: aquamarine;
+            }
+
+            #bg {
+                width: 500px;
+                height: 500px;
+                background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpngGRjYX1ca7qAADU3K6eGLj7ShQE3L2otdzfryl_Y9Ht2QRoQKYQbsXd36XIxMbYOw0&usqp=CAU) no-repeat center cadetblue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Box model</h1>
+        <div id="box">
+            <div id="content">
+                Okay, so in the previous segment we spoke about the fact that you should always try to use box sizing border box as your box sizing model. Now, of course, you don't want to specify box sizing border box on every element in your entire HTML, so you definitely want to specify it once and then have it be inherited everywhere. So let's go ahead and try to do that.
+            </div>
+        </div>
+
+        <h1>Background</h1>
+        <div id="bg">
+            In this <code>div</code> we change the background color and add an image.
+        </div>
+    </body>
+</html>
