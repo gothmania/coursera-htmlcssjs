@@ -1,0 +1,88 @@
+body {
+    font-size: 16px;
+    font-family: Quicksand, sans-serif;
+}
+
+/* NAVIGATION BAR */
+#logo-img {
+    width: 30px;
+    height: 30px;
+    margin: 10px 10px 10px 0px;
+}
+
+/* MAIN CONTENT */
+#main-content {
+    margin-top: 20px;
+}
+
+/* COLUMN TILES */
+.col-tile {
+    height: 250px;
+    margin-bottom: 15px;
+    position: relative;
+    background-color: #eff2dd;
+    border: 2px solid #849c9d;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.col-tile:hover {
+    box-shadow: 0 1px 8px 2px #c1d6d6;
+}
+
+.col-tile-title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #293031;
+    color: #ffffff;
+    opacity: 0.8;
+    padding-top: 10px;
+    padding-bottom: 7px;
+}
+
+#menu-tile {
+    background: url(https://img.freepik.com/premium-vector/digital-restaurant-menu-horizontal-format_23-2148655475.jpg?w=500) no-repeat center;
+}
+
+#specials-tile {
+    background: url(https://millersalehouse.com/wp-content/uploads/2021/07/Specials_925X615_SigItems.jpg) no-repeat center;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 30px;
+    padding-top: 35px;
+    padding-bottom: 20px;
+}
+
+.footer-header {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+}
+
+.footer-text {
+    font-size: 0.7em;
+}
+
+.footer-link-icon {
+    text-decoration: none;
+}
+
+.footer-icon {
+    width: 32px;
+    background: #ffffff;
+    border: 1px solid #293031;
+    border-radius: 16px;
+}
+
+.footer-icon:hover {
+    box-shadow: 0px 0px 5px 1px #c1d6d6;
+}
