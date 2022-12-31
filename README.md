@@ -7,6 +7,7 @@
 * Floating elements: [Example 03](./examples/example03.html)
 * Bootstrap: [Example 04](./examples/example04.html)
 * Restaurant: [Restaurant](./examples/restaurant/)
+* New year 2023: [New year 2023](./examples/newyear/)
 
 ## Solutions
 

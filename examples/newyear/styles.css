@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    --c-pastel-yellow: #fbf6e0;
+    --c-pastel-mint: #d7f0ed;
+    --c-pastel-purple: #ecdff3;
+    --c-body-text: #1d265f;
+    --c-highlight-text: #418ec6;
+    --body-padding-left: 60px;
+
+    margin: 0;
+    padding: 40px var(--body-padding-left) 40px var(--body-padding-left);
+    min-width: 300px;
+    background: linear-gradient(90deg, var(--c-pastel-yellow), var(--c-pastel-mint));
+
+    font-family: "Lexend Light", sans-serif;
+    font-size: 14px;
+    text-align: justify;
+    color: var(--c-body-text);
+}
+
+.row-heading {
+    margin-bottom: 30px;
+    padding: 5px 0 5px 0;
+
+    font-family: "Lexend Semibold", sans-serif;
+    font-size: 2em;
+    text-align: center;
+}
+
+.text-brand {
+    padding: 0 3px 0 3px;
+    background-color: var(--c-pastel-purple);
+    border-radius: 0.25em;
+
+    font-family: "Lexend Semibold", sans-serif;
+    color: var(--c-highlight-text);
+}
+
+#panel-options {
+    padding: 10px 10px 10px 10px;
+    background-color: var(--c-pastel-purple);
+    border-radius: 1em;
+
+    counter-reset: --option-counters 0;
+
+    --option-padding-top: .2em;
+    --option-number-size: 1.3em;
+    --option-number-padding: .1em;
+    --option-content-size: .9em;
+}
+
+.text-question {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.option {
+    margin-left: 30px;
+}
+
+td {
+    padding-top: var(--option-padding-top);
+    padding-bottom: var(--option-padding-top);
+}
+
+.option-number::before {
+    counter-increment: --option-counters 1;
+    content: counter(--option-counters);
+}
+
+.option-number {
+    display: inline-block;
+    padding: var(--option-number-padding);
+    width: calc(var(--option-number-size) + var(--option-number-padding) * 2);
+    height: calc(var(--option-number-size) + var(--option-number-padding) * 2);
+    background: linear-gradient(90deg, var(--c-pastel-mint), var(--c-pastel-yellow));
+    border-radius: 50%;
+    box-shadow: 0 0 3px 1px var(--c-highlight-text);
+
+    font-family: "Lexend Semibold", sans-serif;
+    font-size: var(--option-number-size);
+    text-align: center;
+    color: var(--c-highlight-text);
+}
+
+.option-content {
+    padding-left: 7px;
+    font-size: var(--option-content-size);
+}
+
+
+@media (min-width: 768px) {
+    body {
+        font-size: 16px;
+        --body-padding-left: 80px;
+    }
+}
+
+@media (min-width: 1000px) {
+    body {
+        font-size: 18px;
+        --body-padding-left: 100px;
+    }
+}
