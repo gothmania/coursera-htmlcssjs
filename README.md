@@ -8,6 +8,7 @@
 * Bootstrap: [Example 04](./examples/example04.html)
 * Restaurant: [Restaurant](./examples/restaurant/)
 * New year 2023: [New year 2023](./examples/newyear/)
+* Flex demo: [Flex demo](./examples/flex/)
 
 ## Solutions
 

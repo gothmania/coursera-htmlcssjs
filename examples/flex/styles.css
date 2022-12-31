@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin-left: 40px;
+    margin-right: 40px;
+    font-family: "Segoe UI", sans-serif;
+}
+
+h1 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+
+    font-size: 2.5em;
+    letter-spacing: .075em;
+    text-transform: uppercase;
+}
+
+.list-options {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: aliceblue;
+    box-shadow: 1px 1px 3px 1px gray;
+
+    border: 1px solid;
+    border-radius: 1em;
+}
+
+.list-heading {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.list-description {
+    margin-bottom: 20px;
+    font-size: .8em;
+}
+
+.option-row {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    --optnum-size: 2.3em;
+}
+
+.option-number {
+    display: inline-block;
+    margin-right: 20px;
+    width: var(--optnum-size);
+    min-width: var(--optnum-size);
+    height: var(--optnum-size);
+    line-height: var(--optnum-size);
+
+    background-color: black;
+    border-radius: 50%;
+
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+
+    cursor: pointer;
+}
+
+.option-text {
+    min-width: 80px;
+    font-size: .9em;
+}
