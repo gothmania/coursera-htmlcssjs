@@ -44,11 +44,13 @@ body {
 }
 
 #menu-tile {
-    background: url(https://img.freepik.com/premium-vector/digital-restaurant-menu-horizontal-format_23-2148655475.jpg?w=500) no-repeat center;
+    background: url(./menu.jpg) no-repeat center;
+    background-size: cover;
 }
 
 #specials-tile {
-    background: url(https://millersalehouse.com/wp-content/uploads/2021/07/Specials_925X615_SigItems.jpg) no-repeat center;
+    background: url(./specials.jpg) no-repeat center;
+    background-size: cover;
 }
 
 /* FOOTER */
@@ -80,7 +82,7 @@ footer {
     width: 32px;
     background: #ffffff;
     border: 1px solid #293031;
-    border-radius: 16px;
+    border-radius: 50%;
 }
 
 .footer-icon:hover {
