@@ -1,0 +1,8 @@
+{
+    "author": "Hoang Bao Long",
+    "country": "Vietnam",
+    "city": "Hanoi",
+    "yob": 1988,
+    "isGraduateStudent": true,
+    "schools": ["HMU", "JHSPH", "a future school for PhD"]
+}
