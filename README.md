@@ -10,7 +10,7 @@
 * New year 2023: [New year 2023](./examples/newyear/)
 * Flex demo: [Flex demo](./examples/flex/)
 * Javascript demo: [JS demo](./examples/js/)
-* Prescription: [Prescription](./examples/js/)
+* Prescription: [Prescription](./examples/prescription/)
 
 ## Solutions
 
