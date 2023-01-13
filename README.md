@@ -16,3 +16,4 @@
 * Module 2: [Module 2 solution](./module2-solution/)
 * Module 3: [Module 3 solution](./module3-solution/)
 * Module 4: [Module 4 solution](./module4-solution/)
+* Module 5: [Module 5 solution](./module5-solution/)
