@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    --color-gray: #f0f0f0;
+    --color-dark: #40585c;
+    --color-medium: #83a7a9;
+    --color-bright: #d9e7e6;
+}
+
+body, input, button {
+    font-family: "Quicksand";
+    font-size: 12pt;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-gray);
+}
+
+h1 {
+    font-size: 1.7em;
+    text-transform: uppercase;
+}
+
+table {
+    border-spacing: 0;
+}
+
+th, td {
+    padding: .1em;
+}
+
+.pad-med {
+    padding: .5em;
+}
+
+
+/* INPUT, BUTTON */
+input, button {
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.button-cyan {
+    padding: 0.5em 1em;
+    background-color: var(--color-dark);
+    color: var(--color-bright);
+}
+
+.button-cyan:hover,
+.button-cyan:focus {
+    background-color: var(--color-medium);
+}
+
+.button-cyan:active {
+    background-color: var(--color-bright);
+    color: var(--color-dark);
+}
+
+
+/* PRESCRIPTION AREA */
+#prescription-area {
+    padding: 1em;
+    min-width: 800px;
+    max-width: 60%;
+}
+
+#prescription-table {
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    background-color: var(--color-bright);
+    border: 1px solid var(--color-medium);
+    border-radius: 5px;
+}
+
+#prescription-table-body tr:nth-child(2n+3) {
+    background-color: var(--color-gray);
+}
+
+.pres-col-id {
+    font-weight: bold;
+}
+
+.pres-col-dailydose {
+    width: 6em;
+}
+
+.pres-col-unit {
+    width: 4em;
+}
+
+.pres-col-nodays {
+    width: 4em;
+}
+
+.pres-col-instruction {
+    width: 100%;
+}
+
+.pres-col-buttons {
+    display: flex;
+}
+
+.pres-col-buttons > button {
+    padding: .1em .2em;
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    font-size: .8em;
+}
+
+.pres-col-buttons > button:hover,
+.pres-col-buttons > button:focus {
+    color: var(--color-dark);
+}
+
+.pres-col-buttons > button:active {
+    color: var(--color-medium);
+}
+
+/* DIV-MESSAGE */
+#div-message {
+    margin-top: 1em;
+    padding: 1em;
+    border: 1px solid var(--color-medium);
+    border-radius: 5px;
+    font-size: 10pt;
+}
+
+#div-message > h2 {
+    margin: 0;
+    font-size: 1.4em;
+}

@@ -1,0 +1,18 @@
+{
+    "Amoxicillin 250mg": {
+        "unit": "viên",
+        "defaultInstruction": "Chia sáng/tối uống ngay sau ăn."
+    },
+    "Esomeprazole 40mg": {
+        "unit": "viên",
+        "defaultInstruction": "Chia sáng/tối uống trước ăn 30 phút hoặc sau ăn 1 tiếng."
+    },
+    "Nizoral cream": {
+        "unit": "N/A",
+        "defaultInstruction": "Bôi vùng tổn thương."
+    },
+    "NaCl 0.9% nhỏ mắt": {
+        "unit": "giọt",
+        "defaultInstruction": "Nhỏ 2 giọt vào mỗi bên mắt."
+    }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prescription demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form id="prescription-area">
+        <div id="prescription-header">
+            <h1>Kê đơn</h1>
+            <div>Nhập tên thuốc và liều lượng.</div>
+        </div>
+        <table id="prescription-table">
+            <thead>
+                <tr id="prescription-table-header">
+                    <th>STT</th>
+                    <th>Tên thuốc</th>
+                    <th>Liều/ngày</th>
+                    <th class="pres-col-unit">Đơn vị</th>
+                    <th>Số ngày</th>
+                    <th class="pres-col-instruction">Hướng dẫn dùng thuốc</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="prescription-table-body">
+                <tr id="prescription-row-0">
+                    <td><div></div></td>
+                    <td><input type="text" class="pad-med" id="pres-row-name-input-0" list="drug-names" presid="0"></td>
+                    <td><input type="number" class="pres-col-dailydose pad-med" id="pres-row-dailydose-input-0" min="1"></td>
+                    <td><div class="pres-col-unit pad-med" id="pres-row-unit-div-0"></div></td>
+                    <td><input type="number" class="pres-col-nodays pad-med" id="pres-row-nodays-input-0" min="1"></td>
+                    <td><input type="text" class="pres-col-instruction pad-med" id="pres-row-instruction-input-0"></td>
+                    <td>
+                        <div class="pres-col-buttons">
+                            <button type="button" id="btn-new-add" title="Add">
+                                <span class="material-symbols-outlined">add</span>
+                            </button>
+                            <button type="button" id="btn-new-clear" title="Clear">
+                                <span class="material-symbols-outlined">clear_all</span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="prescription-buttons">
+            <button type="button" class="button-cyan" id="btn-clear" accesskey="x"><u>X</u>óa</button>
+            <button type="button" class="button-cyan" id="btn-submit" accesskey="n"><u>N</u>hập</button>
+            <button type="button" class="button-cyan" id="btn-cancel" accesskey="h"><u>H</u>ủy</button>
+        </div>
+        <div id="div-message"></div>
+    </form>
+
+    <datalist id="drug-names"></datalist>
+
+    <!-- SCRIPTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+
+</body>
+</html>

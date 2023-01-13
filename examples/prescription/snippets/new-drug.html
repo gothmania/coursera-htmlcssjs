@@ -1,0 +1,37 @@
+
+<tr id="prescription-row-{{presid}}" class="prescription-row" presid="{{presid}}">
+    <td><div class="pres-col-id" id="pres-row-id-{{presid}}">{{rowid}}.</div></td>
+    <td>
+        <div class="pad-med view-mode" id="pres-row-name-div-{{presid}}" presid="{{presid}}">{{name}}</div>
+        <input type="text" class="pad-med edit-mode" id="pres-row-name-input-{{presid}}" value="{{name}}" list="drug-names" presid="{{presid}}" style="display: none;">
+    </td>
+    <td>
+        <div class="pres-col-dailydose pad-med view-mode" id="pres-row-dailydose-div-{{presid}}" min="1">{{dailydose}}</div>
+        <input type="number" class="pres-col-dailydose pad-med edit-mode" id="pres-row-dailydose-input-{{presid}}" value="{{dailydose}}" style="display: none;">
+    </td>
+    <td><div class="pres-col-unit pad-med" id="pres-row-unit-{{presid}}">{{unit}}</div></td>
+    <td>
+        <div class="pres-col-nodays pad-med view-mode" id="pres-row-nodays-div-{{presid}}" min="1">{{nodays}}</div>
+        <input type="number" class="pres-col-nodays pad-med edit-mode" id="pres-row-nodays-input-{{presid}}" value="{{nodays}}" style="display: none;">
+    </td>
+    <td>
+        <div class="pres-col-instruction pad-med view-mode" id="pres-row-instruction-div-{{presid}}">{{instruction}}</div>
+        <input type="text" class="pres-col-instruction pad-med edit-mode" id="pres-row-instruction-input-{{presid}}" value="{{instruction}}" style="display: none;">
+    </td>
+    <td>
+        <div class="pres-col-buttons">
+            <button type="button" class="view-mode" id="btn-row-edit" title="Edit" presid="{{presid}}">
+                <span class="material-symbols-outlined">edit</span>
+            </button>
+            <button type="button" class="view-mode" id="btn-row-remove" title="Remove" presid="{{presid}}">
+                <span class="material-symbols-outlined">delete_forever</span>
+            </button>
+            <button type="button" class="edit-mode" id="btn-row-accept" title="Accept" presid="{{presid}}" style="display: none;">
+                <span class="material-symbols-outlined">done</span>
+            </button>
+            <button type="button" class="edit-mode" id="btn-row-cancel" title="Cancel" presid="{{presid}}" style="display: none;">
+                <span class="material-symbols-outlined">cancel</span>
+            </button>
+        </div>
+    </td>
+</tr>
