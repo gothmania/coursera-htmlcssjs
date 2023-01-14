@@ -163,6 +163,22 @@ button {
     color: var(--color-medium);
 }
 
+#prescription-table-body tr:nth-child(2n+3) .pres-col-buttons > button:focus {
+    color: var(--color-medium);
+}
+
+#prescription-table-body tr:nth-child(2n+3) .pres-col-buttons > button:focus {
+    box-shadow:
+        0 0 0px 2px var(--color-dark);
+    ;
+    outline: none;
+    color: var(--color-medium);
+}
+
+#prescription-table-body tr:nth-child(2n+3) .pres-col-buttons > button:active {
+    color: var(--color-dark);
+}
+
 /* DIV-MESSAGE */
 #div-message {
     margin-top: 1em;
