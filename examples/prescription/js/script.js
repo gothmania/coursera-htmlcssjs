@@ -131,6 +131,7 @@ function removeAll() {
     $("#div-message").text("");
     $(".prescription-row").remove();
     currPresId = 1;
+    presList = [];
 }
 
 
