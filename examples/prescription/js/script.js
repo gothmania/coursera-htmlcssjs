@@ -218,8 +218,10 @@ function btnClicked(event) {
         case "btn-submit":
             var presStr = "<h2>Đơn thuốc</h2><ol>";
             for (var drugData of presList) {
+                var unitStr = drugData.unit === undefined ? "" : drugData.unit;
                 presStr += "<li>" + drugData.name.toUpperCase() + " " +
-                    drugData.dailydose + "/ngày x " +
+                    drugData.dailydose +  " " +
+                    unitStr + "/ngày x " +
                     drugData.nodays + " ngày<br>" +
                     drugData.instruction + "</li>"
             }
