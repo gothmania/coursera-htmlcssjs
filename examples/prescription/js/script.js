@@ -93,9 +93,7 @@ function addDrug(presId) {
 }
 
 function removeDrug(presId) {
-    var drugName = $("#pres-row-name-div-" + presId).text();
-
-    presList.splice(el => drugName == el.name);
+    presList.splice(el => el.presid === presId, 1);
     $("#prescription-row-" + presId).remove();
 
     // Refresh numbering
