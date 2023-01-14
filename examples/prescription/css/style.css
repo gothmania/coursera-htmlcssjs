@@ -106,8 +106,7 @@ button {
 
 #prescription-table {
     margin-top: 1.5em;
-    margin-bottom: 0.5em;
-    padding: .7em;
+    margin-bottom: 2em;
 }
 
 #prescription-table-body tr:nth-child(2n+3) {
