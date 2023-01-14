@@ -163,7 +163,7 @@ button {
     color: var(--color-medium);
 }
 
-#prescription-table-body tr:nth-child(2n+3) .pres-col-buttons > button:focus {
+#prescription-table-body tr:nth-child(2n+3) .pres-col-buttons > button:hover {
     color: var(--color-medium);
 }
 
