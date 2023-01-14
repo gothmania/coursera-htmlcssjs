@@ -169,7 +169,7 @@ button {
 
 #prescription-table-body tr:nth-child(2n+3) .pres-col-buttons > button:focus {
     box-shadow:
-        0 0 0px 2px var(--color-dark);
+        0 0 0px 2px var(--color-medium);
     ;
     outline: none;
     color: var(--color-medium);
@@ -180,8 +180,7 @@ button {
 }
 
 #prescription-table-body tr:nth-child(2n+3) input {
-    background-color: var(--color-medium);
-    color: var(--color-dark);
+    box-shadow: 0 0 0 1px var(--color-dark);
 }
 
 
