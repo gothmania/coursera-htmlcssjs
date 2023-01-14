@@ -160,7 +160,7 @@ button {
 }
 
 .pres-col-buttons > button:active {
-    color: var(--color-medium);
+    color: var(--color-dark);
 }
 
 #prescription-table-body tr:nth-child(2n+3) .pres-col-buttons > button:hover {
