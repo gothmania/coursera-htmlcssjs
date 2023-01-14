@@ -1,55 +1,94 @@
 * {
     box-sizing: border-box;
     --color-gray: #f0f0f0;
-    --color-dark: #40585c;
+    /* --color-dark: #40585c;
     --color-medium: #83a7a9;
-    --color-bright: #d9e7e6;
+    --color-bright: #d9e7e6; */
+    --color-dark: #333;
+    --color-medium: #637eba;
+    --color-bright: yellow;
 }
 
 body, input, button {
     font-family: "Quicksand";
-    font-size: 12pt;
+    font-size: 11pt;
 }
 
 body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0;
     padding: 0;
+    height: 100vh;
     background-color: var(--color-gray);
+    color: var(--color-gray);
 }
 
 h1 {
-    font-size: 1.7em;
+    font-size: 2em;
     text-transform: uppercase;
+    color: var(--color-bright);
 }
 
 table {
     border-spacing: 0;
 }
 
+th {
+    color: var(--color-dark);
+}
+
 th, td {
-    padding: .1em;
+    padding: .2em;
 }
 
 .pad-med {
-    padding: .5em;
+    padding: .5em 1em;
 }
 
 
 /* INPUT, BUTTON */
-input, button {
-    border: 1px solid;
-    border-radius: 5px;
+input {
+    background-color: var(--color-gray);
+    border: 0;
+    border-radius: 1em;
+}
+
+input:focus {
+    box-shadow:
+        0 0 2px 1px var(--color-dark);
+    ;
+    outline: none;
+}
+
+button {
+    margin-right: .5em;
+    border: 0;
+}
+
+::-moz-focus-inner {
+    border: 0;
 }
 
 .button-cyan {
+    border-radius: 2em;
     padding: 0.5em 1em;
-    background-color: var(--color-dark);
-    color: var(--color-bright);
+    background-color: var(--color-bright);
+    color: var(--color-dark);
+    font-weight: bold;
 }
 
-.button-cyan:hover,
+.button-cyan:hover {
+    background-color: var(--color-gray);
+}
+
 .button-cyan:focus {
-    background-color: var(--color-medium);
+    box-shadow:
+        0 0 0 2px var(--color-medium),
+        0 0 0 5px var(--color-bright);
+    ;
+    outline: none;
 }
 
 .button-cyan:active {
@@ -60,18 +99,17 @@ input, button {
 
 /* PRESCRIPTION AREA */
 #prescription-area {
-    padding: 1em;
+    padding: 1em 3em;
     min-width: 800px;
     max-width: 60%;
+    background-color: var(--color-medium);
+    box-shadow: 1px 1px 10px 1px #999;
 }
 
 #prescription-table {
     margin-top: 1.5em;
     margin-bottom: 0.5em;
-    padding: 0.5em;
-    background-color: var(--color-bright);
-    border: 1px solid var(--color-medium);
-    border-radius: 5px;
+    padding: .7em;
 }
 
 #prescription-table-body tr:nth-child(2n+3) {
@@ -91,7 +129,7 @@ input, button {
 }
 
 .pres-col-nodays {
-    width: 4em;
+    width: 5em;
 }
 
 .pres-col-instruction {
@@ -100,19 +138,26 @@ input, button {
 
 .pres-col-buttons {
     display: flex;
+    margin-left: .1em;
 }
 
 .pres-col-buttons > button {
-    padding: .1em .2em;
+    padding: .1em;
     background-color: transparent;
-    border: 0;
-    border-radius: 0;
+    border-radius: .5em;
     font-size: .8em;
 }
 
-.pres-col-buttons > button:hover,
+.pres-col-buttons > button:hover {
+    color: var(--color-bright);
+}
+
 .pres-col-buttons > button:focus {
-    color: var(--color-dark);
+    box-shadow:
+        0 0 0px 1px var(--color-bright);
+    ;
+    outline: none;
+    color: var(--color-bright);
 }
 
 .pres-col-buttons > button:active {
@@ -123,7 +168,7 @@ input, button {
 #div-message {
     margin-top: 1em;
     padding: 1em;
-    border: 1px solid var(--color-medium);
+    border: 1px solid var(--color-dark);
     border-radius: 5px;
     font-size: 10pt;
 }
