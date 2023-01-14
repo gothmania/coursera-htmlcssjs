@@ -1,17 +1,14 @@
 * {
     box-sizing: border-box;
     --color-gray: #f0f0f0;
-    /* --color-dark: #40585c;
-    --color-medium: #83a7a9;
-    --color-bright: #d9e7e6; */
     --color-dark: #333;
     --color-medium: #637eba;
     --color-bright: yellow;
 }
 
 body, input, button {
-    font-family: "Quicksand";
-    font-size: 11pt;
+    font-family: "Roboto Slab";
+    font-size: .9em;
 }
 
 body {
@@ -37,6 +34,7 @@ table {
 
 th {
     color: var(--color-dark);
+    font-weight: bold;
 }
 
 th, td {
@@ -154,7 +152,7 @@ button {
 
 .pres-col-buttons > button:focus {
     box-shadow:
-        0 0 0px 1px var(--color-bright);
+        0 0 0px 2px var(--color-bright);
     ;
     outline: none;
     color: var(--color-bright);
@@ -176,4 +174,5 @@ button {
 #div-message > h2 {
     margin: 0;
     font-size: 1.4em;
+    color: var(--color-bright);
 }
