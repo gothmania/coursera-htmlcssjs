@@ -8,7 +8,7 @@
 
 body, input, button {
     font-family: "Roboto Slab";
-    font-size: .9em;
+    font-size: .95em;
 }
 
 body {
@@ -112,6 +112,7 @@ button {
 
 #prescription-table-body tr:nth-child(2n+3) {
     background-color: var(--color-gray);
+    color: var(--color-dark);
 }
 
 .pres-col-id {
