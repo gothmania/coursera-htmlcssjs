@@ -180,7 +180,7 @@ button {
 }
 
 #prescription-table-body tr:nth-child(2n+3) input {
-    box-shadow: 0 0 0 1px var(--color-dark);
+    border: 1px solid var(--color-dark);
 }
 
 
